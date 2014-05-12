@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>陆赛赛 | 爱音乐，足球，信息技术</title>
+	<meta name="keywords" content="lusaisai, Love Music, Football, Internet Technology">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="css/lss.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/backgroud.js"></script>
+</head>
+<body>
+	<canvas id="backgroud"></canvas>
+	<div id="container" class="pure-g">
+		<div class="pure-u-1-12"></div>
+		<div class="pure-u-4-5 box">
+			<a href="http://music.lusaisai.com/" style="display:none"></a>
+			<div id="music" class="unit">
+				<h1>Music</h1>
+				<p>不爱音乐的人都是坏人</p>
+				<img src="images/music.png">
+			</div>
+		</div>
+		<div class="pure-u-1-12"></div>
+		
+	</div>
+	<script type="text/javascript">
+	$('#music > h1').addClass('animated fadeInDownBig');
+	$('#music > p').addClass('animated bounceInUp');
+	$('#music > img').addClass('animated rollIn');
+	$('#music').click(function() {
+		window.location = 'http://music.lusaisai.com/';
+	});
+	</script>
+</body>
+</html>

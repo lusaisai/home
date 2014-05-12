@@ -1,0 +1,38 @@
+/* Base */
+html, button, input, select, textarea, .pure-g [class *= "pure-u"], .pure-g-r [class *= "pure-u"] {
+    font-family: "Hiragino Sans GB W3",Tahoma,Arial,"Microsoft YaHei";
+}
+
+
+/* Buttons */
+.lss-button {
+	border-radius: 8px;
+	color: #FFF;
+}
+
+.lss-button-default {
+	color: #263248;
+	background: none repeat scroll 0% 0% #F3F3F4;
+}
+
+.lss-button-blue {
+	background: none repeat scroll 0% 0% #008ED4;
+}
+
+.lss-button-green {
+	background: none repeat scroll 0% 0% #2DB245;
+}
+
+.lss-button-red {
+	background: none repeat scroll 0% 0% #FF9999;
+}
+
+.lss-button-orange {
+	background: none repeat scroll 0% 0% #F1713F;
+}
+
+.lss-button-black {
+	background: none repeat scroll 0% 0% #333333;
+}
+
+
