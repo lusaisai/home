@@ -81,7 +81,13 @@ $(function () {
         }
     };
 
-    var reset = function () {
+    var setCanvas = function () {
+        WIDTH = window.innerWidth;
+        HEIGHT = window.innerHeight;
+        canvas = document.getElementById("backgroud");
+        $(canvas).attr("width", WIDTH).attr("height", HEIGHT);
+        con = canvas.getContext("2d");
+
         for (var e = 0; e < 100; e++) {
             pxs[e] = new Circle;
             pxs[e].reset();
@@ -89,16 +95,11 @@ $(function () {
     };
     
     var start = function () {
-        WIDTH = window.innerWidth;
-        HEIGHT = window.innerHeight;
-        canvas = document.getElementById("backgroud");
-        $(canvas).attr("width", WIDTH).attr("height", HEIGHT);
-        con = canvas.getContext("2d");
-        reset();
+        setCanvas();
         var run = setInterval(draw, rint);
         $(window).resize(function () {
            clearInterval(run);
-           reset();
+           setCanvas();
            con.clearRect(0, 0, WIDTH, HEIGHT);
            run = setInterval(draw, rint);
         });
