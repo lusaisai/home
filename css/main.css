@@ -35,7 +35,10 @@ div.unit {
   margin: 10px;
   position: relative;
   top: 300px;
-  
+}
+
+div.unit > h1 {
+    font-family: 'Lemon', cursive;
 }
 
 div.unit:hover {
