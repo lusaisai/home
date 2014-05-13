@@ -84,6 +84,8 @@ $(function () {
     var setCanvas = function () {
         WIDTH = window.innerWidth;
         HEIGHT = window.innerHeight;
+        console.log(WIDTH);
+        console.log(HEIGHT);
         canvas = document.getElementById("backgroud");
         $(canvas).attr("width", WIDTH).attr("height", HEIGHT);
         con = canvas.getContext("2d");

@@ -26,6 +26,7 @@
 body {
     color: white;
     background-color: rgba(0,0,0,0);
+    overflow: hidden;
 }
 
 div.unit {
@@ -34,7 +35,7 @@ div.unit {
   height: 200px;
   margin: 10px;
   position: relative;
-  top: 300px;
+  top: 200px;
 }
 
 div.unit > h1 {
