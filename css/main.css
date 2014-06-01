@@ -38,10 +38,10 @@ div.unit {
   top: 200px;
 }
 
-div.unit > h1 {
+/*div.unit > h1 {
     font-family: 'Lemon', cursive;
 }
-
+*/
 div.unit:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.1);
