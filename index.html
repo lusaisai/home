@@ -34,17 +34,23 @@
 		<div class="pure-u-1-12"></div>
 	</div>
 	<script type="text/javascript">
-	$('#music > h1').addClass('animated fadeInDownBig');
-	$('#music > p').addClass('animated bounceInUp');
-	$('#music > img').addClass('animated rollIn');
-	$('#music').click(function() {
-		window.location = 'http://music.lusaisai.com/';
-	});
-	$('#blog > h1').addClass('animated fadeInDownBig');
-	$('#blog > p').addClass('animated bounceInUp');
-	$('#blog > img').addClass('animated rollIn');
-	$('#blog').click(function() {
-		window.location = 'http://blog.lusaisai.com/';
+	$(function () {
+		$(window).load(function () {
+			$('.unit').css('display', 'inline-block');
+
+			$('#music > h1').addClass('animated fadeInDownBig');
+			$('#music > p').addClass('animated bounceInUp');
+			$('#music > img').addClass('animated rollIn');
+			$('#music').click(function() {
+				window.location = 'http://music.lusaisai.com/';
+			});
+			$('#blog > h1').addClass('animated fadeInDownBig');
+			$('#blog > p').addClass('animated bounceInUp');
+			$('#blog > img').addClass('animated rollIn');
+			$('#blog').click(function() {
+				window.location = 'http://blog.lusaisai.com/';
+			});
+		});
 	});
 	</script>
 </body>
