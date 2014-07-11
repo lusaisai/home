@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Lemon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lemon Regular'), local('Lemon-Regular'), url(../images/Lemon.woff) format('woff');
+}
+
+
 #backgroud {
     position:fixed;
     background-color: #164979;
@@ -31,17 +39,17 @@ body {
 
 div.unit {
   display: inline-block;
-  width: 350px;
+  width: 380px;
   height: 200px;
   margin: 10px;
   position: relative;
   top: 200px;
 }
 
-/*div.unit > h1 {
+div.unit > h1 {
     font-family: 'Lemon', cursive;
 }
-*/
+
 div.unit:hover {
     cursor: pointer;
     background-color: rgba(0,0,0,0.1);
