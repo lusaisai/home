@@ -19,16 +19,18 @@
 		<div class="pure-u-1-12"></div>
 		<div class="pure-u-4-5 box">
 			<a href="http://music.im633.com/" style="display:none">music</a>
+			<a href="http://player.im633.com/" style="display:none">player</a>
 			<a href="http://video.im633.com:3000/" style="display:none">video</a>
 			<div id="music" class="unit">
 				<h1>Music</h1>
 				<p>Those who don't love music are bad people</p>
-				<img src="images/music.png">
+				<img id="musicurl" src="images/music.png">
+				<img id="playerurl" src="images/player.png">
 			</div>
 			<div id="video" class="unit">
 				<h1>Video</h1>
 				<p>Enjoy the beautiful moments</p>
-				<img src="images/video.png">
+				<img id="videourl" src="images/video.png">
 			</div>
 		</div>
 		<div class="pure-u-1-12"></div>
@@ -40,16 +42,31 @@
 
 			$('#music > h1').addClass('animated fadeInDownBig');
 			$('#music > p').addClass('animated bounceInUp');
-			$('#music > img').addClass('animated rollIn');
-			$('#music').click(function() {
+			$('img').addClass('animated lightSpeedIn');
+			$('#musicurl').hover(
+				function(){$('#musicurl').removeClass('lightSpeedIn').addClass('animated bounce infinite')},
+				function(){$('#musicurl').removeClass('animated bounce infinite')}
+			);
+			$('#playerurl').hover(
+				function(){$('#playerurl').removeClass('lightSpeedIn').addClass('animated bounce infinite')},
+				function(){$('#playerurl').removeClass('animated bounce infinite')}
+			);
+			$('#musicurl').click(function() {
 				window.location = 'http://music.im633.com/';
+			});
+			$('#playerurl').click(function() {
+				window.location = 'http://player.im633.com/';
 			});
 			$('#video > h1').addClass('animated fadeInDownBig');
 			$('#video > p').addClass('animated bounceInUp');
-			$('#video > img').addClass('animated rollIn');
-			$('#video').click(function() {
+			$('#videourl').click(function() {
 				window.location = 'http://video.im633.com:3000/';
 			});
+			$('#videourl').hover(
+				function(){$('#videourl').removeClass('lightSpeedIn').addClass('animated bounce infinite')},
+				function(){$('#videourl').removeClass('animated bounce infinite')}
+			);
+
 		});
 	});
 	</script>

@@ -44,15 +44,15 @@ div.unit {
   margin: 10px;
   position: relative;
   top: 200px;
+  background-color: rgba(0,0,0,0.1);
 }
 
 div.unit > h1 {
     font-family: 'Lemon', cursive;
 }
 
-div.unit:hover {
+div.unit img:hover {
     cursor: pointer;
-    background-color: rgba(0,0,0,0.1);
 }
 
 .box {
